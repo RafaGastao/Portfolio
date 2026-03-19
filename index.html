@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafael Gastão | Portfólio Front-end</title>
+  <meta name="description" content="Portfólio de Rafael Gastão, desenvolvedor front-end com foco em HTML, CSS, JavaScript e React." />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container">
+      <a class="logo" href="#inicio">Rafael Gastão</a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="#sobre">Quem sou</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#certificados">Certificados</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#redes">Redes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Rafael Gastão<br />Desenvolvedor Front-end</h1>
+          <p class="hero-texto">
+            Construindo projetos práticos em HTML, CSS, JavaScript e React, com foco em interfaces
+            modernas, performance e código bem estruturado.
+          </p>
+          <div class="hero-acoes">
+            <a class="btn btn-primario" href="#projetos">Ver projetos</a>
+            <a class="btn btn-secundario" href="#redes">Minhas redes</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <img class="hero-card-foto" src="./img/rafael.jpeg" alt="Foto de Rafael Gastão" />
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="sobre" aria-label="Sobre mim">
+      <div class="container">
+        <h2>Quem sou</h2>
+        <p>
+          Tenho 21 anos e sou apaixonado por tecnologia e desenvolvimento de software. Atualmente, estudo  com desenvolvimento Full Stack, criando interfaces modernas e responsivas com React e SASS, além de desenvolver a lógica de aplicações e gerenciar bancos de dados com Python e MySQL.
+Gosto de desafios e de aprender novas tecnologias para resolver problemas do mundo real. Meu foco é sempre criar aplicações eficientes e bem estruturadas.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao" id="stack" aria-label="Stack técnico">
+      <div class="container">
+        <p class="secao-label">HABILIDADES</p>
+        <h2>Stack técnico</h2>
+        <div class="stack-layout">
+          <div class="stack-lista">
+              <article class="stack-item">
+              <h3>HTML & CSS</h3>
+            </article>
+            <article class="stack-item">
+              <h3>JavaScript</h3>
+            </article>
+            <article class="stack-item">
+              <h3>React</h3>
+            </article>
+            <article class="stack-item">
+              <h3>Git & GitHub</h3>
+            </article>
+            <article class="stack-item">
+              <h3>SASS</h3>
+            </article>
+            <article class="stack-item">
+              <h3>Python</h3>
+            </article>
+            <article class="stack-item">
+              <h3>MySQL</h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="certificados" aria-label="Certificados">
+      <div class="container">
+        <p class="secao-label">FORMAÇÃO</p>
+        <h2>Certificados</h2>
+        <p class="secao-desc">Cursos e certificações concluídos ao longo da minha trajetória.</p>
+        <div class="certificados-grid">
+          <article class="cert-card">
+            <a class="cert-thumb cert-thumb-link" href="./img/Certificado de Conclusão - Rafael Gastão Trajano Carlos (1).pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado Vai na Web em PDF">
+              <img src="./img/certificadoVaiNaWeb.png" alt="Miniatura do certificado Vai na Web" />
+            </a>
+            <h3>Desenvolvedor(a) FullStack — Vai na Web</h3>
+            <p>Formação concluída com 234h de carga horária.</p>
+            <ul class="tags">
+              <li>Vai na Web</li>
+              <li>2025</li>
+            </ul>
+          </article>
+
+          <article class="cert-card">
+            <a class="cert-thumb cert-thumb-link" href="./img/Certificado Carreira em Cibersegurança - Rafael Gastão Trajano Carlos.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado de carreira em cibersegurança em PDF">
+              <img src="./img/certificadoCibersegurança.png" alt="Miniatura do certificado de carreira em cibersegurança" />
+            </a>
+            <h3>Carreira em Cibersegurança</h3>
+            <p>Certificação de trilha focada em fundamentos e práticas de segurança.</p>
+            <ul class="tags">
+              <li>Cibersegurança</li>
+              <li>Certificação</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="projetos" aria-label="Projetos">
+      <div class="container">
+        <p class="secao-label">PROJETOS</p>
+        <h2>Trabalhos recentes</h2>
+        <p class="secao-desc">Seleção de projetos desenvolvidos para estudo e prática.</p>
+
+        <div class="projetos-carousel" aria-label="Carrossel de projetos">
+          <button class="carousel-btn prev" type="button" aria-label="Projeto anterior">❮</button>
+          <div class="projetos-viewport">
+            <div class="projetos-track" id="projetosTrack">
+              <article class="projeto-slide">
+                <a class="projeto-imagem projeto-imagem-link" href="https://github.com/RafaGastao/DesafioFinal" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do projeto DesafioFinal no GitHub">
+                  <img src="./img/desafio biblioteca vai na web.png" alt="Preview do projeto Desafio Final" />
+                </a>
+                <div class="projeto-info">
+                  <h3>Desafio Final — Biblioteca</h3>
+                  <p>Projeto web desenvolvido como desafio final, com foco em interface responsiva, organização de conteúdo e navegação intuitiva para uma experiência de uso clara e agradável.</p>
+                  <a class="btn btn-secundario projeto-link-codigo" href="https://github.com/RafaGastao/DesafioFinal" target="_blank" rel="noopener noreferrer">Ver código</a>
+                </div>
+              </article>
+
+              <article class="projeto-slide">
+                <a class="projeto-imagem projeto-imagem-link" href="https://github.com/RafaGastao/Cemiterio" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do projeto Cemitério no GitHub">
+                  <img src="./img/cemiterio.png" alt="Preview do projeto Cemitério Online" />
+                </a>
+                <div class="projeto-info">
+                  <h3>Cemitério Online</h3>
+                  <p>Sistema web para gestão de cemitérios, com foco em organização de informações e operações administrativas.</p>
+                  <a class="btn btn-secundario projeto-link-codigo" href="https://github.com/RafaGastao/Cemiterio" target="_blank" rel="noopener noreferrer">Ver código</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Próximo projeto">❯</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+
+  <footer class="footer" id="redes" aria-label="Redes sociais">
+    <div class="container">
+      <h2>Redes sociais</h2>
+      <p>Me encontre nas plataformas abaixo:</p>
+      <ul class="contato-lista">
+        <li><a href="https://github.com/RafaGastao?tab=repositories" target="_blank" rel="noopener noreferrer">https://github.com/RafaGastao?tab=repositories</a></li>
+        <li><a href="https://www.linkedin.com/in/rafael-gast%C3%A3o-504024272/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/rafael-gast%C3%A3o-504024272/</a></li>
+      </ul>
+      <small>© 2026 Rafael Gastão. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+</body>
+</html>

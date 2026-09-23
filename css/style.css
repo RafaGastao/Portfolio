@@ -374,11 +374,40 @@ h1 {
   overflow: hidden;
 }
 
-.projeto-imagem-link img {
+.projeto-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   display: block;
+}
+
+.projeto-galeria-bikcraft {
+  height: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 10px;
+  background: #14171b;
+  overflow: hidden;
+}
+
+.projeto-galeria-bikcraft img {
+  width: 104%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  display: block;
+  border-radius: 6px;
+}
+
+.projeto-galeria-bikcraft a {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 .projeto-info,
@@ -391,6 +420,9 @@ h1 {
 .projeto-info {
   padding-top: 14px;
   padding-bottom: 16px;
+  background: var(--surface);
+  position: relative;
+  z-index: 1;
 }
 
 .projeto-info h3,
